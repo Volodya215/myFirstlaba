@@ -1,0 +1,22 @@
+.primer{
+			width: 100%;
+			background: white;
+			padding: 5px;
+			padding-right: 0px;
+			border: solid 1px orange;
+			float: center;
+			border-radius: 15px;
+		}
+
+.letter{
+	color:green;
+	font-size: 200%;
+	font-family:serif; <!-- Шрифт з засечками-->
+	position:relative;
+	top: 5px;
+}
+
+#title{
+	line-height:2;
+	text-align: center;
+}
