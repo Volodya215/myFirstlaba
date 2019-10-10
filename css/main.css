@@ -1,3 +1,29 @@
+body{
+	background: rgba(37, 36, 36, 0.884);
+	color: white;
+	/*background-image: url(image1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;*
+	background-position: 50px 50px;*/
+	text-indent: 1.2em;
+}
+
+h1{
+	color:red;
+}
+h2{
+	color:yellow;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li a{
+	color:rgb(15, 223, 15);
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
 .primer{
 			width: 100%;
 			background: white;
@@ -6,17 +32,27 @@
 			border: solid 1px orange;
 			float: center;
 			border-radius: 15px;
+			font-family: 'Mansalva', cursive;
+			color: orangered;
+			font-size: 150%;
 		}
 
 .letter{
 	color:green;
 	font-size: 200%;
-	font-family:serif; <!-- Шрифт з засечками-->
+	font-family:'Mansalva', cursive; /* Шрифт з засечками */
 	position:relative;
 	top: 5px;
+}
+
+.pruklad{
+	font-family: 'Mansalva', cursive;
+	color: #c9100a;
+	font-size: 200%;
 }
 
 #title{
 	line-height:2;
 	text-align: center;
+	font-family: 'Turret Road', cursive;
 }

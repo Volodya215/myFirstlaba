@@ -1,0 +1,25 @@
+.col1 {
+    border: 1px solid grey;
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 15px;
+    width: 50%;
+    margin: 0%;
+    /*min-width: 200px;*/
+    
+}
+
+.col2 {
+    border: 1px solid grey;
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 15px;
+    width: 24%;
+    margin: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    /*min-width: 200px;*/
+    
+}
