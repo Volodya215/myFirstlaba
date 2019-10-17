@@ -3,11 +3,12 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
 	<h2>Студента групи ІС-82</h2>
 	<h3>Доліда Володимира</h3>
-	<h1 align="center">Зміст</h1>
+	<h2 >Зміст</h2>
 
 	<ul type="square">
 		<li>
@@ -29,7 +30,58 @@
 			<a href="lab7.html">Лабораторна робота №7</a>
 		</li>
 	</ul>
-	<h1 align="center">Лабораторна робота №5</h1>
+	<h1>Лабораторна робота №4 JS</h1>
+
+	<h2>Лабораторна робота №1</h2>
+	<script src="../JS/v1.js"></script>
+
+	<h2>Лабораторна робота №2</h2>
+	<h4>Трикутник</h4>
+
+	<FORM name = "form1"><br>
+		Основа: <input type="text" size = 5 name="param1"><br>
+		Висота:  <input type="text" size = 5 name="param2"><br>
+		<input type="button" value=Обчислити
+		onclick="square(document.form1.param1.value, document.form1.param2.value)"> 
+	</FORM>
+
+	<h4>Квадрат</h4>
+	<FORm name="form2"><br>
+		Сторона: <input type="text" size=7 name="num1" 
+		onchange="square_rec(form2)"><br>
+		Площа квадрата: <input type="text" size=7 name="res"><br> 
+		<input type="reset" value=Оновити> 
+	</FORm>
+
+
+	<h4>Трикутник, заданий точками</h4>
+	<FORM name="form3"><br>
+		Точка 1: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1" ><br>
+		Точка 2: x <input type="text" size=3 name="x2"> y <input type="text" size=3 name="y2" ><br>
+		Точка 3: x <input type="text" size=3 name="x3"> y <input type="text" size=3 name="y3" ><br>
+		<br>
+		Площа трикутника: <input type="text" size=7 name="resu"
+		onfocus="triang(form3)"><br> 
+		<input type="reset" value=Оновити> 
+	</FORM>
+
+
+	<h4>Відстань до початку координат</h4>
+	<FORM name="form4"><br>
+		Точка: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1" ><br>
+		Відстань до початку координат <input type="text" size = 5 name="result"
+		onselect="point(form4)"><br>
+		<input type="reset" value=Оновити>
+	</FORM>
+
+	<h4>Обмінюємо місцями значення двох змінних</h4>
+	<FORM name="form5"><br>
+		Змінна 1:  <input type="text" size=5 name="x"><br>
+		Змінна 2:  <input type="text" size=5 name="y"
+		onblur="change(form5)"><br>
+	</FORM>
+	<script src="../JS/v2.js"></script>
+
 
 </body>
 </html>
