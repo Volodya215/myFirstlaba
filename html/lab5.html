@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
 </head>
+
 <body>
 	<h2>Студента групи ІС-82</h2>
 	<h3>Доліда Володимира</h3>
-	<h2 >Зміст</h2>
+	<h2>Зміст</h2>
 
 	<ul type="square">
 		<li>
@@ -38,109 +42,159 @@
 	<h2>Лабораторна робота №2</h2>
 	<h4>Трикутник</h4>
 
-	<FORM name = "form1"><br>
-		Основа: <input type="text" size = 5 name="param1"><br>
-		Висота:  <input type="text" size = 5 name="param2"><br>
-		<input type="button" value=Обчислити
-		onclick="square(document.form1.param1.value, document.form1.param2.value)"> 
+	<FORM name="form1"><br>
+		Основа: <input type="text" size=5 name="param1"><br>
+		Висота: <input type="text" size=5 name="param2"><br>
+		<input type="button" value=Обчислити onclick="square(document.form1.param1.value, document.form1.param2.value)">
 	</FORM>
 
 	<h4>Квадрат</h4>
 	<FORm name="form2"><br>
-		Сторона: <input type="text" size=7 name="num1" 
-		onchange="square_rec(form2)"><br>
-		Площа квадрата: <input type="text" size=7 name="res"><br> 
-		<input type="reset" value=Оновити> 
+		Сторона: <input type="text" size=7 name="num1" onchange="square_rec(form2)"><br>
+		Площа квадрата: <input type="text" size=7 name="res"><br>
+		<input type="reset" value=Оновити>
 	</FORm>
 
 
 	<h4>Трикутник, заданий точками</h4>
 	<FORM name="form3"><br>
-		Точка 1: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1" ><br>
-		Точка 2: x <input type="text" size=3 name="x2"> y <input type="text" size=3 name="y2" ><br>
-		Точка 3: x <input type="text" size=3 name="x3"> y <input type="text" size=3 name="y3" ><br>
+		Точка 1: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1"><br>
+		Точка 2: x <input type="text" size=3 name="x2"> y <input type="text" size=3 name="y2"><br>
+		Точка 3: x <input type="text" size=3 name="x3"> y <input type="text" size=3 name="y3"><br>
 		<br>
-		Площа трикутника: <input type="text" size=7 name="resu"
-		onfocus="triang(form3)"><br> 
-		<input type="reset" value=Оновити> 
+		Площа трикутника: <input type="text" size=7 name="resu" onfocus="triang(form3)"><br>
+		<input type="reset" value=Оновити>
 	</FORM>
 
 
 	<h4>Відстань до початку координат</h4>
 	<FORM name="form4"><br>
-		Точка: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1" ><br>
-		Відстань до початку координат <input type="text" size = 5 name="result"
-		onselect="point(form4)"><br>
+		Точка: x <input type="text" size=3 name="x1"> y <input type="text" size=3 name="y1"><br>
+		Відстань до початку координат <input type="text" size=5 name="result" onselect="point(form4)"><br>
 		<input type="reset" value=Оновити>
 	</FORM>
 
 	<h4>Обмінюємо місцями значення двох змінних</h4>
 	<FORM name="form5"><br>
-		Змінна 1:  <input type="text" size=5 name="x"><br>
-		Змінна 2:  <input type="text" size=5 name="y"
-		onblur="change(form5)"><br>
+		Змінна 1: <input type="text" size=5 name="x"><br>
+		Змінна 2: <input type="text" size=5 name="y" onblur="change(form5)"><br>
 	</FORM>
-	<script src="../JS/v2.js"></script>
 
 	<h2>Лабораторна робота №3</h2>
 	<h4>Максимальне значення з трьох змінних (спосіб 1)</h4>
 	<FORM name="form6"> <br>
-		Число 1: <input type="text" size=8 name="num1"><br> 
-		Число 2: <input type="text" size=8 name="num2"><br> 
-		Число 3: <input type="text" size=8 name="num3"><br> 
-		Максимальне значення = <input type="text" size=8 name="res"><br> 
-		<input type="button" value="Визначити" 
-		onClick="maxval(form6)"> 
-		<input type="reset"> 
+		Число 1: <input type="text" size=8 name="num1"><br>
+		Число 2: <input type="text" size=8 name="num2"><br>
+		Число 3: <input type="text" size=8 name="num3"><br>
+		Максимальне значення = <input type="text" size=8 name="res"><br>
+		<input type="button" value="Визначити" onClick="maxval(form6)">
+		<input type="reset">
 	</FORM>
 
 	<h4>Максимальне значення з трьох змінних (спосіб 2)</h4>
 	<FORM name="form7"> <br>
-		Число 1: <input type="text" size=8 name="num1"><br> 
-		Число 2: <input type="text" size=8 name="num2"><br> 
-		Число 3: <input type="text" size=8 name="num3"><br> 
-		Максимальне значення = <input type="text" size=8 name="res1"><br> 
-		<input type="button" value="Визначити" 
-		onClick="maxval1(form7)"> 
-		<input type="reset"> 
+		Число 1: <input type="text" size=8 name="num1"><br>
+		Число 2: <input type="text" size=8 name="num2"><br>
+		Число 3: <input type="text" size=8 name="num3"><br>
+		Максимальне значення = <input type="text" size=8 name="res1"><br>
+		<input type="button" value="Визначити" onClick="maxval1(form7)">
+		<input type="reset">
 	</FORM>
 
 	<h4>Максимальне значення з п’яти змінних</h4>
 	<FORM name="form8"> <br>
-		Число 1: <input type="text" size=8 name="num1"><br> 
-		Число 2: <input type="text" size=8 name="num2"><br> 
-		Число 3: <input type="text" size=8 name="num3"><br> 
-		Число 4: <input type="text" size=8 name="num4"><br> 
-		Число 5: <input type="text" size=8 name="num5"><br> 
-		Максимальне значення = <input type="text" size=8 name="res"><br> 
-		<input type="button" value="Визначити" 
-		onClick="maxval5(form8)"> 
-		<input type="reset"> 
+		Число 1: <input type="text" size=8 name="num1"><br>
+		Число 2: <input type="text" size=8 name="num2"><br>
+		Число 3: <input type="text" size=8 name="num3"><br>
+		Число 4: <input type="text" size=8 name="num4"><br>
+		Число 5: <input type="text" size=8 name="num5"><br>
+		Максимальне значення = <input type="text" size=8 name="res"><br>
+		<input type="button" value="Визначити" onClick="maxval5(form8)">
+		<input type="reset">
 	</FORM>
 
 	<h4>Чи можна побудувати трикутник?</h4>
 	<FORM name="form9"> <br>
-		Сторона 1: <input type="text" size=8 name="num1"><br> 
-		Сторона 2: <input type="text" size=8 name="num2"><br> 
-		Сторона 3: <input type="text" size=8 name="num3"><br> 
-		Трикутник: <input type="text" size=8 name="res"><br> 
-		<input type="button" value="Визначити" 
-		onClick="triangle(form9)"> 
-		<input type="reset"> 
+		Сторона 1: <input type="text" size=8 name="num1"><br>
+		Сторона 2: <input type="text" size=8 name="num2"><br>
+		Сторона 3: <input type="text" size=8 name="num3"><br>
+		Трикутник: <input type="text" size=8 name="res"><br>
+		<input type="button" value="Визначити" onClick="triangle(form9)">
+		<input type="reset">
 	</FORM>
 
 	<h4>В якій чверті точка?</h4>
 	<FORM name="form10"> <br>
-		x: <input type="text" size=8 name="num1"><br> 
-		y: <input type="text" size=8 name="num2"><br> 
-		Чверть: <input type="text" size=20 name="res"><br> 
-		<input type="button" value="Визначити" 
-		onClick="point(form10)"> 
-		<input type="reset"> 
+		x: <input type="text" size=8 name="num1"><br>
+		y: <input type="text" size=8 name="num2"><br>
+		Чверть: <input type="text" size=20 name="res"><br>
+		<input type="button" value="Визначити" onClick="point(form10)">
+		<input type="reset">
 	</FORM>
-	<script src="../JS/v3.js"></script>
+
 
 	<h2>Лабораторна робота №4</h2>
 
+	<CEnter>
+		<p>Галерея малюнків</p>
+		<IMG src="../image/home1.jpg" width="90" name="pic1" alt="pic1">
+		<IMG src="../image/home2.jpg" width="90" name="pic2" alt="pic2">
+		<IMG src="../image/home3.jpg" width="90" name="pic3" alt="pic3"> <br>
+
+		<FORM name=form11>
+			Зображення з номерами<br>
+			<input type="text" name="a1" size=1> і
+			<input type="text" name="a2" size=1>
+			<P>
+				<input type="button" value=" Переставити" onClick="chan(form11)">
+		</FORM>
+	</CEnter>
+
+	<h4>Меню</h4>
+	<A href="pg1.htm" onmouseover="img(1, 1)" onmouseout="img(1,0)">
+		<IMG src="../image/home1.jpg" аlt="пункт 1" border="0" width="200" height="50">
+	</A><br>
+	<A href="pg2.htm" onmouseover="img(2,1)" onmouseout="img(2,0)">
+		<IMG src="../image/home2.jpg" аlt=" пункт 1" border="0" width="200" height="50">
+	</A><br>
+	<A href="pg3.htm" onmouseover="img(3,1)" onmouseout="img(3,0)">
+		<IMG src="../image/home3.jpg" аlt=" пункт 1" border="0" width="200" height="50">
+	</A><br>
+
+
+	<h4>Вибір зображення</h4>
+
+	<CEnter>
+		<IMG src="../image/home1.jpg" width="90" name="pic1" alt="pic1" onclick="choice(1)">
+		<IMG src="../image/home2.jpg" width="90" name="pic2" alt="pic2" onclick="choice(2)">
+		<IMG src="../image/home3.jpg" width="90" name="pic3" alt="pic3" onclick="choice(3)"> <br>
+
+		<IMG src="../image/home1.jpg" width="360" name="pic1" alt="pic1">
+	</CEnter>
+
+	<h4>Картинка з ефектом наближення</h4>
+	<center>
+		<IMG src="../image/home1.jpg" width="90" name="pic1" alt="pic1" onmouseover="picsize(1)"
+			onmouseout="picsize(0)">
+	</center>
+
+	<h4>Горизонтальне графічне меню</h4>
+	<center>
+		<div id="menu">
+			<div id="arrow1"></div>
+			<div id="arrow2"></div>
+			<div id="arrow3"></div>
+			<div onmouseover="setArrow('arrow1',1)" onmouseout="setArrow('arrow1',0)">Menu item №1</div>
+			<div onmouseover="setArrow('arrow2',1)" onmouseout="setArrow('arrow2',0)">Menu item №2</div>
+			<div onmouseover="setArrow('arrow3',1)" onmouseout="setArrow('arrow3',0)">Menu item №3</div>
+		</div>
+		<br><br>
+	</center>
+
+
+	<script src="../JS/v2.js"> </script>
+	<script src="../JS/v3.js"> </script>
+	<script src="../JS/v4.js"> </script>
 </body>
+
 </html>
