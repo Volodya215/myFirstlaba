@@ -20,6 +20,10 @@ h2{
 h4{
 	text-align: center;
 }
+a{
+    color:green;
+    text-decoration: none;
+}
 li a{
 	color:rgb(15, 223, 15);
 	text-decoration: none;

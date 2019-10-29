@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JS lab</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="lab5.css">
+</head>
+
+<body>
+    <h2>Студента групи ІС-82</h2>
+    <h3>Доліда Володимира</h3>
+    <h2>Зміст</h2>
+
+    <a href="lab5.html">Лабораторна робота JS (попередні)</a>
+
+    <h1>Лабораторна робота №4 JS</h1>
+
+
+    <h2>Лабораторна робота №5</h2>
+
+    <h4>Обчислення площі обраної з допомогою перемикача фігури</h4>
+    <FORM name="form1"><br>
+        Введіть значення
+        <input type="text" name="data" size=10><br>
+        Вкажіть фігуру: <br>
+        <input type="radio" name="fv" value=1 onClick="test(form1.elements[1].value, form1)">квадрат<br>
+        <input type="radio" name="fv" value=3.14 onClick="test(form1.elements[2].value, form1)">круг<br>
+        <input type="radio" name="fv" value=0.42 onClick="test(form1.elements[3].value, form1)">трикутник<br>
+        <input type="reset" value="Порахувати">
+        <hr>
+        Площа: <input type="text" name="res" size=10>
+    </FORM>
+
+    <h4> Обтікання текстом зображення </h4>
+    <FORM name="form2"> Оберіть значення параметра вирівнювання і натисніть кнопку
+        <b>Переглянути</b>.<br>
+        <PRE>
+        <input type="radio" name="alg" checked value=ld>(left) вирівнювання вліво  
+        <input type="radio" name="alg" value=rd>(right) вирівнювання вправо   </PRE>
+        <input type="button" value="Переглянути" onclick="chpict(form2)">
+        <input type="reset" value="Скасувати" onclick="rset(form2)">
+    </FORM>
+    <TABLE bgcolor="black">
+        <TR>
+            <TD>Lorem Ipsum не є випадковим набором літер. Він походить з уривку класичної латинської літератури 45 року
+                до н.е., тобто має більш як 2000-річну історію. Річард Макклінток, професор латини з коледжу
+                Хемпдін-Сидні, що у Вірджінії, вивчав одне з найменш зрозумілих латинських слів - consectetur - з уривку
+                Lorem Ipsum, і у пошуку цього слова в класичній літературі знайшов безсумнівне джерело.
+                <IMG src="../image/home2.jpg" name=mypict align=left border=3 width=300> Lorem Ipsum походить з розділів
+                1.10.32 та 1.10.33
+                цицеронівського "de Finibus Bonorum et Malorum" ("Про межі добра і зла"), написаного у 45 році до н.е.
+                Цей трактат з теорії етики був дуже популярним в епоху Відродження. Перший рядок Lorem Ipsum, "Lorem
+                ipsum dolor sit amet..." походить з одного з рядків розділу 1.10.32.
+            </TD>
+        </TR>
+    </TABLE>
+
+    <h4> Тег hr </h4>
+    <FORM name="form3"><br>
+        Виберіть зміну: <br>
+        <input type="radio" name="fv" value=1 onClick="tagchange(form3.elements[0].value, form3)">Змінити розмір<br>
+        <input type="radio" name="fv" value=2 onClick="tagchange(form3.elements[1].value, form3)">Змінити положення на сторінці<br>
+        <input type="radio" name="fv" value=3 onClick="tagchange(form3.elements[2].value, form3)">Змінити колір<br>
+        <input type="reset" value="Скасувати" onclick="resetag()">
+        <hr id="nyteg" width="300" size="5" align="center" color="white">
+    </FORM><br><br>
+
+    <h4> Анкета користувача </h4>
+    <Form name="form4"><br>
+        Виберіть вашу стать: <br>  
+        <input type="radio" name="man" value="1" onclick= "sex(form4.elements[0].value)">Чоловік  
+        <input type="radio" name="woman" value="0" onclick="sex(form4.elements[1].value)"> Жінка <br>
+
+        Введіть ваш вік: <br>
+        <input type="text" name="age"><br>
+
+        Виберіть сімейне положення:  <br>
+        <input type="radio" name="fp" value="1" onclick="status(form4.elements[3].value)">Одружений/заміжня<br>
+        <input type="radio" name="fp" value="2" onclick="status(form4.elements[4].value)">Вільний/вільна<br>
+        <input type="radio" name="fp" value="3" onclick="status(form4.elements[5].value)">В активному пошуку<br>
+        <input type="button" value="Надіслати" onclick="res(form4)" >
+        <input type="reset" value="Скасувати">
+    </Form>
+
+    <script src="../JS/v5.js"></script>
+</body>
+
+</html>
