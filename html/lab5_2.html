@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JS lab</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/lab5.css">
+</head>
+
+<body>
+    <h2>Студента групи ІС-82</h2>
+    <h3>Доліда Володимира</h3>
+    <h2>Зміст</h2>
+
+    <a href="lab5.html">Лабораторна робота JS (попередні)</a>
+
+    <h1>Лабораторна робота №4 JS</h1>
+
+
+    <h2>Лабораторна робота №6</h2>
+
+    <CENTER>
+        <p align="center">Анкета</p>
+        <FORM name="form0">
+            <H4>Введіть назву улюбленого журнала чи газети</H4>
+            <input type="text" name="n1" size=45><br>
+        </FORM>
+        <FORM name="form1">
+            <H4>Що вам подобається у виданні?</H4>
+            <TABLE border=3 align=center>
+                <TR>
+                    <TD>
+                        <input type="checkbox" name="m1" value="Стиль подачі матеріалу"
+                            onClick="set(form1.elements[0].value)"> Стиль подачі матеріалу<br>
+                        <input type="checkbox" name="m2" value="Достовірність інформації"
+                            onClick="set(form1.elements[1].value)"> Достовірність інформації<br>
+                        <input type="checkbox" name="m3" value="Дизайн і оформлення"
+                            onClick="set(form1.elements[2].value)"> Дизайн і оформлення<br>
+                    </TD>
+                </TR>
+            </TABLE>
+            <textarea name="area" cols=35 rows=7>
+
+         </textarea><br>
+            <input type="reset" value="Скасувати" onclick="s='Bac приваблює: \r\n'">
+        </FORM>
+    </CENTER>>
+
+    <h3>Анкета перекладача</h3>
+    Вкажіть ті мови, якими Ви володієте: 
+    <FORM name="form2"><br>
+        <input type="checkbox" name="lan" value="100">українська<br>
+        <input type="checkbox" name="lan" value="200">англійська<br>
+        <input type="checkbox" name="lan" value="300">китайська<br>
+        <input type="button" value="Винагорода" onClick="grant()">
+        <hr>
+        <input type="Text" size=50 name="ww" value=""><br>
+        <input type="reset" value="Скасувати">
+    </FORM>
+
+
+    <h3>Анкета слухача курсів</h3>
+    <FORM name="form3"><br>
+        Виберіть тип курсу:  <br>
+        <input type="radio" name="type" value="600">Базовий<br>
+        <input type="radio" name="type" value="800">Поглиблений<br>
+        <input type="radio" name="type" value="1200">Експерт<br><br>
+
+        Виберіть тривалість навчання:   <br>
+        <input type="radio" name="time" value="0">1 місяць<br>
+        <input type="radio" name="time" value="200">2 місяці<br>
+        <input type="radio" name="time" value="300">3 місяці<br><br>
+
+        Виберіть мову роботи з викладачем:  <br>
+        <input type="checkbox" name="lan" value="0">українська<br>
+        <input type="checkbox" name="lan" value="400">англійська<br>
+        <input type="checkbox" name="lan" value="900">китайська<br><br>
+
+        Виберіть форму звітності:  <br>
+        <input type="checkbox" name="f" value="100">онлайн<br>
+        <input type="checkbox" name="f" value="200">офлайн<br><br>
+
+        <input type="button" value="Розрахувати вартість" onClick="pay()">
+        <hr>
+        <input type="Text" size=50 name="wwc" value=""><br>
+        <input type="Text" size=50 name="wws" value=""><br>
+        <input type="reset" value="Скасувати">
+    </FORM>
+
+
+    <center>
+        <A href="lab5_3.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
+    </center>
+
+    <script src="../JS/v6.js"></script>
+</body>
+
+</html>
