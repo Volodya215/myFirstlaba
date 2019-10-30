@@ -20,13 +20,62 @@
 
     <h2>Лабораторна робота №8</h2>
 
+    <h3>НСД двох чисел</h3>
+
+    <FORM name="form1"><br>
+        Введіть число 1 <input type="text" name="num1" size="8"><br>
+        Введіть число 2 <input type="text" name="num2" size="8"><br>
+        НСД <input type="text" name="res" size="8"><br>
+        <input type="button" value="Обчислити" onClick="nod(form1)">
+        <input type="reset" value="Скасувати">
+    </FORM>
+
+    <hr>
+    <h3>Досконале число</h3>
+    <input type="button" value="Визначити" onclick="Goodnumber()">
+
+    <br><br>
+    <hr>
+    <FORM name="form2">
+        <input type="button" value="Виконати" onClick="propobj (form2)">
+        <hr>
+        <textarea name="data" cols=80 rows=20 id=1>Текст</textarea>
+        <hr>
+        <input type="reset" value="Скасувати">
+    </FORM>
+
+    <h3>Перевернути задане натуральне число</h3>
+    <form name="number"><br>
+        <input type="text" name="chuslo">
+        <input type="text" name="result"><br>
+        <input type="button" value="Перевернути" onclick="reverse(number)">
+
+    </form>
+
+    <hr>
+    <h3>Щасливі шестизначні автобусні квитки</h3>
+
+    <form name="ticket"><br>
+        <input type="text" name="rez"><br>
+        <input type="button" value="Знайти" onclick="calc()">
+    </form>
+
+    <hr>
+    <h3>Визначити всі дільники заданого натурального числа</h3>
+
+    <form name="formx"><br>
+        Введіть число: <input type="text" name="num"><br>
+        <TEXTAREA name="restext" cols=15 rows=6>   </TEXTAREA><br>
+        <input type="button" value="Знайти" onclick="dil(formx)">
+    </form>
+    <hr><br>
 
 
-        <center>
-            <A href="lab5_5.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
-        </center>
+    <center>
+        <A href="lab5_5.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
+    </center>
 
-        <script src="../JS/v8.js"></script>
+    <script src="../JS/v8.js"></script>
 </body>
 
 </html>
