@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JS lab</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/lab5.css">
+</head>
+
+<body>
+    <h2>Студента групи ІС-82</h2>
+    <h3>Доліда Володимира</h3>
+    <h2>Зміст</h2>
+
+    <a href="lab5.html">Лабораторна робота JS (попередні)</a>
+
+    <h1>Лабораторна робота №4 JS</h1>
+
+    <h2>Лабораторна робота №7</h2>
+
+
+    <FORM name="form1">
+        <h3>Анкета</h3>
+        <TABLE border=3 bgcolor=silver>
+            <TR>
+                <TH>Обрана мова</TH>
+                <TH>Результат</TH>
+            </TR>
+            <TR>
+                <TD valign=top>
+                    <select name="data" size=3 onChange="gr(form1,form1.data.value)">
+                        <option value=0>українська
+                        <option value=1>англійська
+                        <option value=2>китайська
+                    </select>
+                    <P>
+                        <input type="text" name="res" size=15>
+                </TD>
+                <TD>
+                    <TEXTAREA name="restext" cols=15 rows=6>   </TEXTAREA>
+                    <P>
+                        <input type="button" value="Сума" onClick="form1.resgr.value=sum">
+                        <input type="text" name="resgr" size=10>
+                </TD>
+            </TR>
+        </TABLE>
+        <p>
+            <input type="reset" value="Скасувати" onClick="sum=0; s=''">
+    </FORM>
+
+
+    <h3 align=center>Міста і пам’ятки</hЗ>
+        <FORM name="test">
+            <TABLE border=3 align=center cellpadding=5 cellspacing=6 bgcolor=silver>
+                <TR>
+                    <TH>Пам’ятка</TH>
+                    <TH>знаходиться в місті</ТН>
+                <TR>
+                    <TD>
+                        <select size=7 name="question" onChange="q=test.question.value">
+                            <option value="mad">Музей Прадо<br>
+                            <option value="ber">Рейхстаг<br>
+                            <option value="mil">Опера Ла Скала<br>
+                            <option value="ier">Стіна Плачу<br>
+                            <option value="mek">Священний камінь Кааб<br>
+                            <option value="par">Тріумфальна Арка<br>
+                            <option value="new">Статуя Свободи<br>
+                            <option value="lon">Tayеp<br>
+                        </select> </TD>
+                    <TD>
+                        <select size=7 name="answer" onChange="eq()">
+                            <option value="mek">Meккa<br>
+                            <option value="ier">Єpycaлим<br>
+                            <option value="mil">Мілан<br>
+                            <option value="par">Пapиж<br>
+                            <option value="mad">Мадрид<br>
+                            <option value="lon">Лoндoн<br>
+                            <option value="new">Нью-Йорк<br>
+                            <option value="ber">Бepлін<br>
+                        </select> </TD>
+                </TR>
+            </TABLE>
+            Кількість правильних відповідей <input type="text" name="res" size="5"><br>
+            <input type="button" value="Результат" onclick="result()">
+            <input type="reset" value="Оновити" onclick="sum1=0">
+        </FORM>
+
+        <h3>Змінити колір таблиці</h3>
+
+        <form name="f1">
+            <table border="1" id='tb' width="400px" height="400px">
+                <tr>
+                    <td>Січень</td>
+                    <td>Лютий</td>
+                    <td>Березень</td>
+                </tr>
+                <tr>
+                    <td>Квітень</td>
+                    <td>Травень</td>
+                    <td>Червень</td>
+                </tr>
+            </table><br>
+            Введіть рядок <input type="number" name="indexrow" max="2"><br>
+            Введіть стовпець <input type="number" name="indexcal" max="3"><br>
+            <p>Виберіть колір</p>
+            <select name="color" size=1 onchange="ChangeColor(f1)">
+                <option value='red'>Червоний
+                <option value='green'>Зелений
+                <option value='blue'>Блакитний
+                <option value='none'>Власний
+            </select><br>
+            Введіть колір <input type="text" name="ucolor"><br>
+            <input type="button" value="Get Result" onclick="ChangeColor(f1)"><br>
+
+            <select name="color1" size="1" onchange="ChangeImg(f1)">
+                <option value="pic1">Малюнок 1
+                <option value="pic2">Малюнок 2
+            </select>
+        </form>
+        <hr>
+
+        <h3>Список покупок</h3>
+
+        <FORM name="list">
+            <h3>Товари</h3>
+            <TABLE border=3>
+                <TR>
+                    <TH>Список</TH>
+                    <TH>Результат</TH>
+                </TR>
+                <TR>
+                    <TD valign=top>
+                        <select name="data" size=1 onChange="lis(list,list.data.value)">
+                            <option value=0>Хліб
+                            <option value=1>Помідори
+                            <option value=2>Цукерки
+                            <option value=3>М’ясо
+                        </select>
+                        <P>
+                            <input type="text" name="res" size=15 readonly>
+                    </TD>
+                    <TD>
+                        <TEXTAREA name="restext" cols=15 rows=6 readonly></TEXTAREA>
+                        <P>
+                            Сума <input type="text" name="resgr" size=7 readonly><br>
+                            Кількість товару: <input type="text" name="Count" size=2 readonly><br>
+                            <input type="button" value="Сума" onClick="sumlist()"><br>
+                    </TD>
+                </TR>
+            </TABLE>
+            <p>
+                <input type="reset" value="Скасувати" onClick="sump=0; sumt=''; count=0">
+        </FORM>
+
+        <center>
+            <A href="lab5_4.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
+        </center>
+
+        <script src="../JS/v7.js"></script>
+</body>
+
+</html>
