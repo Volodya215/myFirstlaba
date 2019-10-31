@@ -20,8 +20,42 @@
 
     <h2>Лабораторна робота №9</h2>
 
+    При натисканні кнопки <b>Час</b> ви дізнаєтесь поточний час
+    <FORM name="form1"><br>
+        <input type="text" size=10 name="rest"><br>
+        <input type="button" name=butt value="Час" onClick="c1(form1)">
+    </FORM><hr>
 
+    <h4> В які місяці року 13 число – п’ятниця?</h4>
+    <FORM name="form2">
+        Вкажіть рік: <input type="text" size=8 name="fye">
+        <input type="button" value="Знaйти" onClick="def13(form2)"><br>
+        <textarea Cols=30 rows=10 name=res></textarea><br>
+        <input type="reset" value="Скасувати">
+    </FORM><hr>
+ 
+    <h4>Визначити номер тижня за заданою датою</h4>
+    <form name="nweek"><br>
+        Вкажіть день: <input type="text" name="den">
+        Вкажіть місяць: <input type="text" name="mon"><br>
+        Номер тижня: <input type="text" name="result"><br><br>
+        <input type="button" value="Розрахувати" onclick="numberweek(nweek)">
+    </form><hr>
 
+    <h4>Визначити знак зодіаку</h4>
+    <form name="znak"><br>
+        Вкажіть день: <input type="text" name="bdata"><br>
+        Вкажіть місяць: <input type="text" name="bmonth"><br><br>
+        <input type="text" size=20 name="result"><br>
+		<input type="button" value="Знaйти" onClick="znakzod(znak)"><br>
+    </form><hr>
+
+    <h4>Назва року за східним календарем</h4>
+    <form name="ny"><br>
+        Вкажіть рік: <input type="number" name="myear" min="1"><br>
+        <input type="text" size=20 name="result"><br>
+		<input type="button" value="Знaйти" onClick="checkyear(ny)"><br>
+    </form><hr>
 
     <center>
         <A href="lab5_6.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
