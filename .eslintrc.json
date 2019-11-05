@@ -22,8 +22,11 @@
         "eqeqeq": "off",
         "no-unmodified-loop-condition": "off",
         "no-extend-native": "off",
-        "no-array-constructor": "off", 
+        "no-array-constructor": "off",
         "no-mixed-spaces-and-tabs": "off",
-        "camelcase" :"off"
+        "camelcase": "off",
+        "no-mixed-operators": "off",
+        "semi": "off",
+        "space-before-function-paren":"off"
     }
 }
