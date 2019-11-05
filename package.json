@@ -21,7 +21,7 @@
   "homepage": "https://labastart-f0086.firebaseapp.com",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint -- --fix && npx prettier JS/v10.js --write"
+      "pre-commit": "npm run lint"
     }
   },
   "devDependencies": {
