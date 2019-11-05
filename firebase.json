@@ -1,0 +1,21 @@
+{
+    "hosting": {
+      "public": "/",
+      "ignore": [
+        "firebase.json",
+        "package.json",
+        "package-lock.json",
+        "node_modules/**",
+        ".firebaserc",
+        ".eslintrc.json",
+        ".prettierrc.json",
+        ".gitattributes",
+        ".gitignore",
+        ".travis.yml",
+        ".test/**",
+        ".vscode/**",
+        ".firebase/**",
+        ".git/**"
+      ]
+    }
+  }
