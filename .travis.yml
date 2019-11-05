@@ -12,6 +12,6 @@ notifications:
 deploy:
   provider: firebase
   token: $FIREBASE_TOKEN
-branches:
-  only:
-    - master
+# branches:
+#   only:
+#     - master
