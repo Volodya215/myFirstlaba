@@ -19,7 +19,11 @@
     "url": "https://github.com/Volodya215/myFirstlaba/issues"
   },
   "homepage": "https://labastart-f0086.firebaseapp.com",
-
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint --fix"
+    }
+  },
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
