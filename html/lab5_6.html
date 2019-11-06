@@ -46,6 +46,37 @@
         <input type="reset" value="Скасувати">
     </FORM>
 
+    <h4>Визначити кількість слів</h4>
+    <FORM name="count"><br>
+        Введіть рядок:<input type="text" size=30 name="st1">
+        <hr>
+        <input type="button" value="Bикoнати" onClick="count.res.value=ttest1(count.st1.value)">
+        <input type="reset" value=Скасувати>
+        <hr>
+        <input type="text" size=30 name="res">
+    </FORM>
+
+
+    <h4>Заміна пробілів</h4>
+    <FORM name="zam"><br>
+        Введіть рядок:<input type="text" size=30 name="st1">
+        <hr>
+        <input type="button" value="Bикoнати" onClick="zam.res.value=probil(zam.st1.value)">
+        <input type="reset" value=Скасувати>
+        <hr>
+        <input type="text" size=30 name="res">
+    </FORM>
+
+    <hr>
+    <h4>Заміна слова</h4>
+    <p id="demo">The website you’re building may contain two types of text: graphic text (which is really just an image)
+        and HTML text (which is either in the HTML code or coming from a database). HTML text is also called live text
+        because it is fully editable, just like the text in your word processor. You can apply various font and size
+        settings to live text using CSS styles, or even just with HTML, and you can update the text easily, making live
+        text the ideal choice for your website. </p>
+    <button onclick="myFunction()">Try it</button><br>
+    <hr>
+
     <center>
         <A href="lab5_7.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
     </center>

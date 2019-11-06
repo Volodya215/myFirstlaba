@@ -34,3 +34,22 @@ function numword(obj) {
 	}
 	obj.result.value = res;
 }
+
+function ttest1(s) {
+	return s
+		.replace(/\s\s+/g, ' ')
+		.split(' ')
+		.map(item => Number(item) || item)
+		.filter(item => item === String(item) && item)
+		.length;
+}
+
+function probil(s) {
+	return s.replace(/\s\s+/g, ' ')
+}
+
+function myFunction() {
+	var str = document.getElementById('demo').innerHTML;
+	var res = str.replace(/\btext\b/g, 'words');
+	document.getElementById('demo').innerHTML = res;
+}
