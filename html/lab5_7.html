@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/lab5.css">
 </head>
 
-<body>
+<body onLoad="mult()">
     <h2>Студента групи ІС-82</h2>
     <h3>Доліда Володимира</h3>
     <h2>Зміст</h2>
@@ -20,7 +20,26 @@
 
     <h2>Лабораторна робота №11</h2>
 
+    <h4>Cartoon</h4>
+    <form name="cartoons"><br>
+        <img src="../cartoon/cat1.png">
+        <br>
+        <input type="button" name="But" value="Подивитись" onClick="s()"><br>
+        <input type="button" name="Stop" value="Стоп" onClick="stop()">
+        <hr><br>
+    </form>
+    
+    <h4>Визначення кількості додатніх елементів</h4>
+    <form name="plus"><br>
+        <input type="button" name="But" value="Визначити" onClick="countPositiveNumbers()"><br>
+        <input type="text" name="res">
+    </form><br><hr>
 
+    <h4>Визначення максимального елемента у масиві</h4>
+    <form name="max"><br>
+        <input type="button" name="But" value="Визначити" onClick="findMax()"><br>
+        <input type="text" name="res">
+    </form><br><hr>
 
     <center>
         <A href="lab5_8.html" onmouseover="img(1, 1)" onmouseout="img(1,0)">Continue</A>
